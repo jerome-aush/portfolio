@@ -60,7 +60,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.header-text{
+/* .header-text{
     margin-top: 20%;
     font-size: 19px;
 }
@@ -72,7 +72,90 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: orange;
+} */
+
+
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
 }
+
+.header-text {
+    margin-top: 10%;
+
+    position: relative; /* For absolute positioning of inner elements */
+    text-align: center; /* Center the text */
+    padding: 80px 20px; /* Top and bottom padding increased for space */
+    background: url('') center/cover no-repeat; /* Background image */
+    color: #fff; /* White text color for contrast */
+    /* Full viewport height */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden; /* To hide overflow of animated elements */
+}
+
+.header-text::after {
+    content: ''; /* Empty content for decorative purposes */
+    position: absolute; /* Positioning relative to parent */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    right: 0; /* Stretch to right */
+    bottom: 0; /* Stretch to bottom */
+    /* Semi-transparent overlay for text readability */
+}
+
+.header-text h1 {
+    font-size: 3.5em; /* Larger font size for the main heading */
+    margin-bottom: 20px; /* Space between the heading and paragraph */
+    z-index: 2; /* Make sure text is above the overlay */
+    animation: fadeInDown 2s ease-out; /* Animation for heading */
+}
+
+.header-text h1 span {
+    color: #ff6347; /* Highlight color for your name */
+    font-weight: bold; /* Bold font for emphasis */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Shadow for readability */
+}
+
+.header-text p {
+    font-size: 1.5em; /* Larger font size for readability */
+    line-height: 1.8; /* Improved line height for spacing */
+    color: #e0e0e0; /* Softer white for less emphasis */
+    z-index: 2; /* Ensure paragraph is above overlay */
+    animation: fadeInUp 2s ease-out; /* Animation for paragraph */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
 /* ----------------about------------ */
 #about{
     padding: 80px 0;
@@ -125,7 +208,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -322,7 +405,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     .header-text{
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 16px;
     }
     .header-text h1{

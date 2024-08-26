@@ -84,7 +84,7 @@ body, html {
 
 .header-text {
     /* url("images/back.png")  */
-    margin-top: 20%;
+    margin-top: 12%;
     /* background-image: url("images/back.png"); */
     position: relative; /* For absolute positioning of inner elements */
     text-align: center; /* Center the text */
@@ -184,6 +184,7 @@ body, html {
     font-size: 52px;
     font-weight: 600;
     color: #fff;
+
 }
 
 .tab-titles{
@@ -272,7 +273,7 @@ body, html {
 }
 .project-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -306,7 +307,7 @@ body, html {
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 .proj:hover img{

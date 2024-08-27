@@ -283,6 +283,7 @@ body, html {
     position: relative;
     overflow: hidden;
 }
+
 .proj img{
     width: 100%;
     border-radius: 10px;
@@ -305,7 +306,7 @@ body, html {
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
-    transition: height 0.5s;
+    transition: height 0.2s;
 }
 .layer h3{
     font-weight: 700;
@@ -408,8 +409,8 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     .header-text{
-        margin-top: 50%;
-        font-size: 16px;
+        margin-top: 30%;
+        font-size: 14px;
     }
     .header-text h1{
         font-size: 30px;
@@ -473,6 +474,19 @@ nav .fa-solid{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 40px;
         margin-top: 50px;
+    }
+    .layer{
+        
+        font-size: 10px;
+        
+    }
+    .layer h3{
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .layer p {
+        font-size: 0.9em;
+        
     }
 }
 

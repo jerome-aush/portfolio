@@ -220,6 +220,7 @@ body, html {
 .tab-contents ul li span{
     color: #b54769;
     font-size: 14px;
+    font-weight: 500;
 }
 .tab-contents{
     display: none;
